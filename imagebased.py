@@ -27,11 +27,14 @@ agentcolor = ['r', 'g', 'b', 'k', 'm', 'c']
 Btwo = np.array([[1], [-1]])
 desired_dotp_two = np.array([0.8])
 
-Btriang = np.array([[1, 0, -1],[-1, 1, 0],[0, -1, 1]]) #row agents, columns edges
-desired_dotp_triang = np.array([0.85, 0.9, 0.95]) # edge 1, 2, 3...
+Bthree = np.array([[1, 0, -1],[-1, 1, 0],[0, -1, 1]]) #row agents, columns edges
+desired_dotp_three = np.array([0.85, 0.9, 0.95]) # edge 1, 2, 3...
 
-B = Btriang
-d = desired_dotp_triang
+Bfour = np.array([[1, 0, -1, 1, 0],[-1, 1, 0, 0, 0],[0, -1, 1, 0, 1],[0, 0, 0, -1, -1]])
+desired_dotp_four = np.array([0.75, 0.85, 0.9, 0.95, 0.80])
+
+B = Bfour
+d = desired_dotp_four
 
 list_agents = []
 num_agents = B.shape[0]
